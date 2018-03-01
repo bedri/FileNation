@@ -1,11 +1,12 @@
 import {Routes} from '@angular/router'
 
-import {AboutComponent} from './about/about.component'
+import {SentComponent} from './sent/sent.component'
+import {InputComponent} from './input/input.component'
 import {HomeComponent} from './home/home.component'
 
 export const ROUTES: Routes = [
     {path: '', component: HomeComponent},
-    {path: 'about', loadChildren: './about/about.module#AboutModule'}
+    {path: 'sent', loadChildren: './sent/sent.module#SentModule'}
 
     // {path: '**', component: NotFoundComponent}
 ]
